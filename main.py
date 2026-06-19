@@ -2,25 +2,18 @@ import streamlit as st
 import random
 st.set_page_config(page_title="병아리 위젯 놀이터", page_icon="🐤", layout="centered")
 st.title("🐤 병아리 위젯 놀이터")
-# 1. 이미지
 st.image("병아리.jpg", width=300)  # 픽셀 단위로 가로 크기 고정
-# 2. 슬라이더 — 병아리 귀염지수 투표
 귀염 = st.slider("🐤 병아리 귀염지수에 투표해 주세요", 0, 100, 80)
 st.write(f"이 병아리의 귀염지수는 **{귀염}점**! " + ("💛" * (귀염 // 20 + 1)))
-# 3. 컬러피커 — 만지면 바로 색이 바뀜
 색 = st.color_picker("🎨 병아리에게 입힐 색을 골라 보세요", "#FFD400")
 st.markdown(f"<h3 style='color:{색}'>이 색 옷을 입은 병아리, 어때요?</h3>", unsafe_allow_html=True)
-# 4. 선택 상자 + 이모지 반응
 간식 = st.selectbox("🍙 병아리에게 줄 간식은?", ["좁쌀", "옥수수", "상추", "물"])
 이모지 = {"좁쌀": "🌾", "옥수수": "🌽", "상추": "🥬", "물": "💧"}
 st.write(f"냠냠! 병아리가 {이모지[간식]} **{간식}**을(를) 맛있게 먹어요.")
-# 5. 체크박스 — 조건에 따라 화면 변신
 if st.checkbox("✨ 병아리의 비밀 마음 열기"):
     st.info("삐약! 당신이 좋아요! 🐤💛")
-# 6. 텍스트 입력 — 병아리 이름 지어주기
 이름 = st.text_input("✏️ 병아리에게 이름을 지어 주세요")
 st.divider()
-# 7. 버튼 — 병아리의 편지
 if st.button("💌 병아리의 편지 받기"):
     if not 이름:
         st.warning("먼저 병아리에게 이름을 지어 주세요! ✏️")
