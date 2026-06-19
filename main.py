@@ -2,7 +2,6 @@ import streamlit as st
 import random
 st.set_page_config(page_title="병아리 위젯 놀이터", page_icon="🐤", layout="centered")
 st.title("🐤 병아리 위젯 놀이터")
-st.write("아래 위젯을 만지는 순간 화면이 살아 움직여요!")
 # 1. 이미지
 st.image("병아리.jpg", width=300)  # 픽셀 단위로 가로 크기 고정
 # 2. 슬라이더 — 병아리 귀염지수 투표
