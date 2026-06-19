@@ -2,7 +2,7 @@ import streamlit as st
 import random
 st.set_page_config(page_title="병아리 위젯 놀이터", page_icon="🐤", layout="centered")
 st.title("🐤 병아리 위젯 놀이터")
-st.image("병아리.jpg", width=300)  # 픽셀 단위로 가로 크기 고정
+st.image("https://ibb.co/9m9dKdJ2", width=300)  # 픽셀 단위로 가로 크기 고정
 귀염 = st.slider("🐤 병아리 귀염지수에 투표해 주세요", 0, 100, 80)
 st.write(f"이 병아리의 귀염지수는 **{귀염}점**! " + ("💛" * (귀염 // 20 + 1)))
 색 = st.color_picker("🎨 병아리에게 입힐 색을 골라 보세요", "#FFD400")
