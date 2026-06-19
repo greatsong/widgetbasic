@@ -6,7 +6,7 @@ st.title("🐤 병아리 위젯 놀이터")
 st.write("아래 부품들을 직접 만져 보세요. 만지는 순간 화면이 살아 움직여요!")
 
 # 1. 이미지
-st.image("https://pixnio.com/ko/%EB%8F%99%EB%AC%BC/%EC%A1%B0%EB%A5%98/%EC%B9%98%ED%82%A8/%ED%98%B8%EA%B8%B0%EC%8B%AC-%EC%A1%B0%EB%A5%98-%EB%85%B8%EB%9E%80-%EB%B3%91%EC%95%84%EB%A6%AC")
+st.image("https://pixnio.com/free-images/2017/02/08/2017-05-08-07-27-36-960x640.jpg")
 
 # 2. 슬라이더 — 즉각 반응
 나이 = st.slider("🎂 나이를 골라 보세요", 0, 100, 15)
