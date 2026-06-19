@@ -5,7 +5,7 @@ st.set_page_config(page_title="🐤 병아리 위젯 놀이터", page_icon="🐤
 
 # 1. 이미지 — 짧고 귀여운 주소
 st.image("https://placehug.com/300/300", caption="안녕! 나는 병아리야 🐤")
-# (대체) st.image("https://picsum.photos/seed/chick/600/300")
+st.image("https://picsum.photos/seed/chick/600/300")
 
 st.title("🐤 병아리 위젯 놀이터")
 st.write("아래 부품들을 직접 만져 보세요. 만지는 순간 화면이 살아 움직여요!")
